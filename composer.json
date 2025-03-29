@@ -1,0 +1,33 @@
+{
+    "name": "dagasmart/scheduling",
+    "alias": "任务调度",
+    "description": "方便管理 laravel 的定时任务",
+    "type": "library",
+    "version": "1.0.2",
+    "keywords": ["bizadmin", "extension"],
+    "homepage": "https://gitee.com/dagasmart/scheduling",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "dagasmart",
+            "email": "dagasmart@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "dagasmart/bizadmin": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "DagaSmart\\Scheduling\\": "src/"
+        }
+    },
+    "extra": {
+        "bizadmin": "DagaSmart\\Scheduling\\SchedulingServiceProvider",
+        "laravel": {
+            "providers": [
+              "DagaSmart\\Scheduling\\SchedulingServiceProvider"
+            ]
+        }
+    }
+}
